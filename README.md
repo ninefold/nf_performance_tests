@@ -46,7 +46,7 @@ $ bundle exec ruby bin/spree_test.rb --users=200 --ramp=60 --length=300 --region
 
 If all went well, you should see a URL to your flood and you can watch it go and
 see your results. We recommend setting the Apdex settings in flood.io to
-something no more than 0.75s for Satisfied and 3s for Tolerating.
+something no more than 750ms for Satisfied and 3000ms for Tolerating.
 
 Writing Your Own
 ----------------
