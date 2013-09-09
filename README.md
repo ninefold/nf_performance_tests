@@ -53,7 +53,17 @@ Writing Your Own
 
 Contributing
 ------------
+If you want to contribute to this repo, either by improving the tests or adding
+a new project to test against, then you know the drill:
 
+1. Fork the project
+2. Make your changes
+3. Make a pull request
+
+Easy, n'est-ce pas?
 
 Your Results
 ------------
+We want to hear about your results. If your app doesn't perform the way that you
+think it should on Ninefold, then we want to know about it. We're constantly
+tweaking our platform to provide the best performance for the price.
