@@ -41,7 +41,7 @@ you've got a grid started in the region that you're going to flood from. If you
 don't, you'll get a 400 error.
 
 ```
-$ bundle exec ruby bin/spree_test.rb --users=200 --ramp=60 --length=300 --region=us-west1 <URL>
+$ bundle exec ruby bin/spree_test.rb flood <URL> --users=200 --ramp=60 --length=300 --region=us-west1
 ```
 
 If all went well, you should see a URL to your flood and you can watch it go and
@@ -50,6 +50,8 @@ something no more than 750ms for Satisfied and 3000ms for Tolerating.
 
 Writing Your Own
 ----------------
+
+TODO
 
 Contributing
 ------------
