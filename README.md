@@ -52,7 +52,25 @@ something no more than 750ms for Satisfied and 3000ms for Tolerating.
 Writing Your Own
 ----------------
 
-TODO
+We're working on a better API at the moment, but for now here are the steps to
+create your own tests:
+
+1. Copy `lib/nf_performance/tests/example.rb` and name it after your app (eg.
+   `my_app.rb`)
+2. Open your new test and rename the class `Example` to your app (eg. MyApp)
+3. Using the [ruby-jmeter](https://github.com/flood-io/ruby-jmeter) DSL,
+   write a test plan to simulate users.
+4. Create a new script in `bin` by copying `bin/example_test.rb` to something named
+   after your app (eg. `bin/my_app_test.rb`)
+5. Replace `require_relative '../lib/nf_performance/tests/example'` with the path
+   to your new test
+6. Replace `Example` with your class (`eg.
+   NFPerformance::Tests::MyApp.new`)
+7. Run your tests like the example for spree:
+    ```
+    $ bin/my_app_test.rb <URL> --users=200 --ramp=60 --length=300 --region=us-west1
+    ```
+
 
 Contributing
 ------------
