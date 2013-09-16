@@ -41,7 +41,7 @@ you've got a grid started in the region that you're going to flood from. If you
 don't, you'll get a 400 error.
 
 ```
-$ bundle exec ruby bin/spree_test.rb flood <URL> --users=200 --ramp=60 \
+$ bundle exec ruby bin/spree_test.rb flood <DOMAIN> --users=200 --ramp=60 \
                                                  --length=300 --region=us-west1 --name="My Test"
 ```
 
@@ -68,7 +68,8 @@ create your own tests:
    NFPerformance::Tests::MyApp.new`)
 7. Run your tests like the example for spree:
     ```
-    $ bundle exec bin/my_app_test.rb <URL> --users=200 --ramp=60 --length=300 \
+<<<<<<< HEAD
+    $ bundle exec bin/my_app_test.rb <DOMAIN> --users=200 --ramp=60 --length=300 \
                                            --region=us-west1 --name 'MyApp Test'
     ```
 

@@ -4,7 +4,7 @@ module NFPerformance
   class CLI < Thor
 
 
-    desc "flood URL", "run flood using our test plan and options"
+    desc "flood DOMAIN", "run flood using our test plan and options"
     method_option :ramp, type: :numeric, required: true
     method_option :users, type: :numeric, required: true
     method_option :length, type: :numeric, required: true
