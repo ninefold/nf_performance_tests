@@ -31,9 +31,9 @@ and copying the token.
 $ export FLOOD_IO_KEY=<your flood.io key>
 ```
 
-Now you'll need to have a [Spree](https://github.com/spree/spree) install with
+Now you'll need to have a [Spree](http://spreecommerce.com) install with
 the sample data loaded to point the test script at. We've got [a
-repo](https://github.com/ninefold/nf_perf_spree) which you can fork and work
+repo](https://github.com/ninefold/nf_performance_spree) which you can fork and work
 with. Instructions for setup are in that repo.
 
 Once you've got your app running, time to point your flood at the app. Make sure
