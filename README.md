@@ -66,10 +66,11 @@ create your own tests:
 6. Replace `Example` with your class (`eg.
    NFPerformance::Tests::MyApp.new`)
 7. Run your tests like the example for spree:
-    ```
-    $ bundle exec bin/my_app_test.rb <DOMAIN> --users=200 --ramp=60 --length=300 \
-                                           --region=us-west1 --name 'MyApp Test'
-    ```
+
+```
+$ bundle exec bin/my_app_test.rb <DOMAIN> --users=200 --ramp=60 --length=300 \
+                                         --region=us-west1 --name 'MyApp Test'
+```
 
 
 Contributing
