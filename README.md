@@ -1,12 +1,11 @@
 Ninefold Performance Tests
 ==========================
 
-Ninefold's performance tests to show different platforms' capability of keeping
-users happy as you scale.
+Ninefold's performance tests have been designed to show the impact on 
+["happy users"](https://help.ninefold.com/entries/22413845-Apdex-to-Measure-User-Satisfaction) as different platforms scale.
 
 These are the tests we ran to produce the data shown on [our performance
-page](http://ninefold.com/performance). We wanted to release them so that you
-could see the tests we ran and so you can run your own.
+page](http://ninefold.com/performance). We wanted to release them so you can reproduce what we did and run your own tests.
 
 Running the Tests
 -----------------
@@ -87,5 +86,5 @@ Easy, n'est-ce pas?
 Your Results
 ------------
 We want to hear about your results. If your app doesn't perform the way that you
-think it should on Ninefold, then we want to know about it. We're constantly
+think it should on Ninefold, [then we want to know about it](http://ninefold.com/contact/). We're constantly
 tweaking our platform to provide the best performance for the price.
