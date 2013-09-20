@@ -1,5 +1,4 @@
 require 'ruby-jmeter'
-require 'pry'
 
 module NFPerformance
   class Test
