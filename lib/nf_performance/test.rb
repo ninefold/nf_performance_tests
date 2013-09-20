@@ -1,5 +1,4 @@
 require 'ruby-jmeter'
-require 'pry'
 
 module NFPerformance
   class Test
@@ -23,7 +22,6 @@ module NFPerformance
           concurrentPool: 4
         )
 
-        cache
         cookies
 
         plan
