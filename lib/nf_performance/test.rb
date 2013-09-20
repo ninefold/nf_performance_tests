@@ -22,7 +22,6 @@ module NFPerformance
           concurrentPool: 4
         )
 
-        cache
         cookies
 
         plan
