@@ -6,13 +6,22 @@ module NFPerformance
       @users = options[:users]
       @ramp = options[:ramp]
       @length = options[:length]
-      @domain = options[:domain]
       @region = options[:region]
       @name = options[:name]
     end
 
-    def run
-      a = test do
+    def flood domain
+      @domain = domain
+      test_plan.grid ENV['FLOOD_IO_KEY'], region: @region, name: @name
+    end
+
+    def jmeter domain
+      @domain = domain
+      test_plan.run path: '/opt/boxen/homebrew/bin/', gui:true
+    end
+
+    def test_plan
+      test do
         grab_dsl self
         defaults(
           domain: @domain,
@@ -25,7 +34,7 @@ module NFPerformance
         cookies
 
         plan
-      end.grid ENV['FLOOD_IO_KEY'], region: @region, name: @name
+      end
     end
 
     def plan
