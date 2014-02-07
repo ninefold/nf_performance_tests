@@ -41,8 +41,9 @@ don't, you'll get a 400 error.
 
 ```
 $ bundle exec ruby bin/spree_test.rb flood <DOMAIN> --users=200 --ramp=60 \
-                                                 --length=300 --region=us-west1 --name="My Test"
+                                                 --length=300 --region=us-west-1 --name="My Test"
 ```
+Note that DOMAIN should not contain http:// or the trailing /.
 
 If all went well, you should see a URL to your flood and you can watch it go and
 see your results. We recommend setting the Apdex settings in flood.io to
