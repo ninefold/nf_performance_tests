@@ -2,6 +2,11 @@ require 'ruby-jmeter'
 
 module NFPerformance
   class Test
+    def self.find_by_name name
+      require_relative "./tests/#{name.downcase}"
+      Kernel.const_get("NFPerformance::Tests::#{name}")
+    end
+
     def initialize options = {}
       @users = options[:users]
       @ramp = options[:ramp]

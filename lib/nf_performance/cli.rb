@@ -11,7 +11,8 @@ module NFPerformance
     method_option :region, type: :string, required: true
     method_option :name, type: :string
 
-    def flood domain
+    def flood test_plan_name, domain
+      test_plan = NFPerformance::Test.find_by_name(test_plan_name).new(options)
       test_plan.flood domain
     end
 
@@ -19,18 +20,11 @@ module NFPerformance
     method_option :ramp, type: :numeric, required: true
     method_option :users, type: :numeric, required: true
     method_option :length, type: :numeric, required: true
-    method_option :region, type: :string, required: true
     method_option :name, type: :string
 
-    def jmeter domain
+    def jmeter test_plan_name, domain
+      test_plan = NFPerformance::Test.find_by_name(test_plan_name).new(options)
       test_plan.jmeter domain
-    end
-
-    no_commands do
-    def test_plan
-      # TODO: Meta-programming magic
-      raise "No test plan defined"
-    end
     end
   end
 end
